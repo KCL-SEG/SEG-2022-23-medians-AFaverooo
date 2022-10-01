@@ -1,6 +1,5 @@
 """Median calculator."""
 """ENTER YOUR SOLUTION HERE!"""
-
 while True:
     try:
         print("Enter a list of numbers separated by commas: ")
@@ -9,4 +8,14 @@ while True:
         print("Some input could not be converted to a number!")
     else:
         break
-print(numbers)
+
+index = len(numbers) // 2
+isEven = (len(numbers) % 2) == 0
+median = 0
+
+if isEven:
+    median = (numbers[index - 1] + numbers[index]) / 2
+else:
+    median = numbers[index]
+
+print(median)
