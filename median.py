@@ -9,7 +9,7 @@ while True:
     else:
         break
 
-#test comment
+numbers.sort()
 index = len(numbers) // 2
 isEven = (len(numbers) % 2) == 0
 median = 0
